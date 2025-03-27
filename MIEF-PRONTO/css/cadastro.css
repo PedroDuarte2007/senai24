@@ -1,0 +1,37 @@
+#cadastro {
+    font-family: Bebas Neue, sans-serif;
+    font-size: 50px;
+    width: 25%;
+    padding: 50px;
+    background-color: #68d6a3;
+    color: rgb(0, 0, 0);
+    border: none;
+    position: relative; 
+    top: 575px; 
+    left: 200px; 
+    border-radius: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#cadastro:hover {
+    background-color: #48b281;
+}
+
+#cadastroo {
+    font-family: Bebas Neue, sans-serif;
+    font-size: 45px;
+    width: 15%;
+    padding: 25px;
+    background-color: #68d6a3;
+    color: rgb(0, 0, 0);
+    border: none;
+    position: relative; 
+    top: 25px; 
+    left: 999px; 
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#cadastroo:hover {
+    background-color: #48b281;
+}

@@ -1,0 +1,294 @@
+*{
+    margin: 100;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+}
+
+.menu-toggle{
+    font-size: 30px;
+    padding: 10px;
+    background-color: #2b8057;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+
+.slide-menu.active{
+    left: 0 ;
+}
+
+.menu-toggle.active{
+    left: 250px;
+}
+
+.slide-menu{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.slide-menu ul{
+    list-style: none;
+    padding: 0;
+}
+.slide-menu ul li{
+    padding: 15px;
+}
+
+.slide-menu ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.slide-menu ul li a:hover{
+    color: #48b281;
+}
+
+.header{
+    background: url('https://www.legiaojovem.com.br/wp-content/uploads/2019/12/destaque-especial-de-natal-lista-de-livros.jpg') no-repeat center/cover;  
+    color: white;
+    padding: 250px 100px;
+    text-align: center;
+}
+
+.banner{
+    font-family: 'Arial', sans-serif;
+    background-color: #48b281;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 5px;
+    opacity: 0;
+    transform: translateY(-20);
+    transition: opacity 1s ease, transform 0.5s ease;
+    animation: fadeInDown 1s forwards;
+}
+
+@keyframes fadeInDown{
+    from{
+    opacity: 0;
+    transform: translateY(-20px);
+    }
+    to{ 
+    opacity: 1;
+    transform:  translateY(0);
+    }
+}
+
+.content{
+    padding: 20px;
+    color: black;
+}
+
+h2{
+    font-family:  Bebas Neue, sans-serif;
+    color: #e9e9e9;
+    margin-top: 20px;
+}
+
+p{
+    font-family: Bebas Neue, sans-serif;
+    color: rgb(0, 0, 0)
+}
+
+.produto-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.produto-item{
+    background-color: #fff;
+    border: 1px solid #2889a7;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.produto-item img{
+    width: 100%;
+    border-radius: 5px;  
+}
+
+.footer{
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 30px;
+    background-color: #000000;
+    color: #48b281;
+    bottom: 0;
+    width: 100%;
+}
+
+.description{
+    color: rgb(0, 0, 0);
+    margin: 35px;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+
+  .card-container {
+    display: flex;
+    gap: 30px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #333;
+  }
+
+  .card-description {
+    font-size: 1em;
+    color: #666;
+    margin: 0 0 20px;
+  }
+
+  .card-button {
+
+    padding: 10px 10px;
+    background-color: #48b281;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .card-button:hover {
+    background-color: #68d6a3;
+  }
+  .card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+ }
+
+ .linguas-container {
+  display: flex;
+  gap: 30px; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+ }
+
+ .linguas {
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+ }
+
+ .linguas img {
+  width: 100%;
+  height: auto;
+ }
+
+ .linguas-content {
+  padding: 10px;
+ }
+
+ .linguas-title {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+  color: #333;
+ }
+
+ .linguas-description {
+  font-size: 1em;
+  color: #666;
+  margin: 0 0 20px;
+ }
+
+ .linguas-button {
+
+  padding: 10px 10px;
+  background-color: #9b1717;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+ }
+
+ .linguas-button:hover {
+  background-color: #b1a119;
+ }
+
+ .linguas-button1 {
+
+    padding: 10px 10px;
+    background-color: #17559b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+   }
+  
+   .linguas-button1:hover {
+    background-color: #b11919;
+   }
+
+ .linguas img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+}
+
+
+
+

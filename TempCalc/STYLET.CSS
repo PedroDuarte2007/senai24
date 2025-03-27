@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("");
+}
+
+.caixa-maior{
+    background-color: rgba(197, 238, 233, 0.952);
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    width: 950px;
+    max-width: 450px;
+    color:rgb(0, 0, 0);
+}
+
+.input-cidade{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: rgb(122, 108, 108);
+    color:rgb(0, 0, 0);
+    width: calc(100% - 100px);
+}
+
+.botao-busca{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color:  rgb(122, 108, 108);
+    cursor: pointer;
+    float: right;
+}
+
+.img-busca{
+    width: 20px;
+}
+
+.caixa-media{
+    margin-top: 30px;
+}
+
+.cidade{
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.temp{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+.caixa-menor{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+} 
+
+.texto-previsao{
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.umidade{
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+#voltar{
+    font-family: Bebas Neue, sans-serif;
+    font-size: 30px;
+    width: 150%;
+    padding: 60px;
+    background-color: rgba(197, 238, 233, 0.952);
+    color: rgb(255, 255, 255);
+    border: none;
+    position: relative; 
+    top: 350px; 
+    left: -350px; 
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+#voltar:hover {
+    background-color: #a0d4d8;
+}
+
+#imagemf{
+    background: url(https://br.cassiotoledo.com/wp-content/uploads/sites/6/2023/04/jfuser2_Hot_weather_thermometer_sundayblue_skycreative_design_s_4f14bedd-a060-4fd3-8621-57628afd4a21-1060x600.png);
+    width: 150%;
+    padding: 60px;
+}
+
+body{
+    height: 100vh;
+    width: 100wh;
+    font-family: sans-serif;
+    background-image: url('https://static.mundoeducacao.uol.com.br/mundoeducacao/2019/08/variacoes-na-atmosfera.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
