@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int numero;
+
+    cout << "Digite um número para ver sua tabuada: ";
+    cin >> numero;
+
+    if(numero <= 0) {
+        cout << "Por favor, digite um número inteiro positivo maior que zero." << endl;
+        return 1;
+    }
+
+    int i = 1;
+    while(i <= 10) {
+        cout << numero << " x " << i << " = " << numero * i << endl;
+        i++;
+    }
+
+    return 0;
+}

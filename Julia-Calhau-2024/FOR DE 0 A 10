@@ -1,0 +1,21 @@
+#include <stdio.h>  
+    int main() {
+     int numero;
+     for (;;)
+     {
+         printf("Digite um numero de 0 a 10: ");
+     scanf ("%d", &numero);
+     
+     if (numero<=10) 
+     
+     {
+         break;
+     }
+     else {
+         printf("Numero invalido! \n");
+     }
+     }
+     printf ("Voce digitou o numero certo, fim do programa!");
+     return 0;
+     }
+    

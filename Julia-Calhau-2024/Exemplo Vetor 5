@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    const int ARRAY_SIZE = 6;
+    float func[ARRAY_SIZE];
+    int cont;
+
+    for(cont=0 ; cont<ARRAY_SIZE ; cont++){
+        cout<<"Funcionario "<<cont+1<<": ";
+        cin >> func[cont];
+    }
+
+    cout<<"Imposto a pagar: "<<endl;
+    for(cont=0 ; cont<ARRAY_SIZE ; cont++)
+        cout<<"Funcionario "<<cont+1<<": R$"<<func[cont]*0.15<<endl;
+
+}

@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    ("%ls", &a);
+    printf("Digite um numero:");
+    scanf("%ls", &a);
+    printf("O numero informado foi %ls", &a);
+    scanf("%ls", &a);
+
+    return 0;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situação do Aluno</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="contanier">
+        <input type="text" placeholder="Nome: " id="nome"/>
+        <input type="text" placeholder="Nota 1 " id="nota1"/>
+        <input type="text" placeholder="Nota 2" id="nota2"/>
+        <input type="text" placeholder="Nota 3" id="nota3"/>
+        <br /> 
+         <button onclick="somar()">Calcular a média</button>
+         <p class="result"id="result"></p>
+    </div>
+         <script src="script.js"> </script>
+</body>
+</html>
+
+//script
+
+function somar(){
+    var nota1 = parseFloat(document.getElementById('nota1').value);
+    var nota2 = parseFloat(document.getElementById('nota2').value);
+    var nota3 = parseFloat(document.getElementById('nota3').value);
+    var nome = document.getElementById('nome').value;
+    var result = document.querySelector("#result");
+    var media = (nota1 + nota2 + nota3) / 3;
+    var situação = "";
+
+    if (media >= 9.5) {
+        situação = "Aluno ouro";
+    } else if (media >= 8.5) {
+        situação = "Aluno prata";
+    } else if (media >= 7.5) {
+        situação = "Aluno bronze";
+    } else if (media >= 5) {
+        situação = "Aprovado";
+    } else {
+        situação = "Retido";
+    }
+
+    result.innerHTML = `
+    <p>Media: ${media}</p>
+    <p>Nome do aluno: ${nome}</p>
+    <p>Situação do aluno: ${situação}</p>
+    `;
+}

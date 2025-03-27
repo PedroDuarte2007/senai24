@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcThings</title>
+    <link rel="styleheet" href="../kelvin/kelvin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body>
+    <a href="../index.html"><div class="menu-toggle" id="menu-toggle"><i class="fas fa-angle-left"></i></i></div></a>
+    <header>
+      <img src="../img/logo.png" alt="Logo Kitnet Jaguariúna" class="header-logo">
+      <h1><font color = #ffde59>Celsius</font> <font color = #ffffff>=</font> <font color = #004aad>Kelvin</font></h1>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><div class="contanier">
+        <input type="text" placeholder="Temperatura em Celsius" id="tc">
+        <br>
+        <br>
+        <br>
+          <button onclick="somar()">Processar Valores</button>
+          <br>
+          <br>
+          <br>
+          <b><h2 class="result"id="result"></h2></b>
+    </div></center>
+      <br>
+      <br>
+      <div class="quadro">
+        <div class="texto">
+            <h2>Explicação da formula e da operação</h2>
+            <div class="conteudo">
+                Utilizamos a fórmula TK = TC + 273, em que TK equivale à temperatura em Kelvin e TC à temperatura em graus Celsius.
+                Converter 40° C em K: TK = 40 + 273. TK = 313.
+                A escala Kelvin é normalmente utilizado para medir a temperatura absoluta de um objeto, com zero absoluto sendo 0 K.
+            </div>
+        </div>
+        <div class="imagem">
+            <h2>Formula</h2>
+            <img src="https://www.pravaler.com.br/wp-content/uploads/2020/08/celsius-kelvin.png" alt="Imagem Exemplo">
+        </div>
+    </div>
+<br>
+<br>
+
+        <script src="kelvin.js"> </script>
+
+        <style>
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%; 
+    background-color: #f4f4f4;
+    background-image: url(https://th.bing.com/th/id/R.9c8cac08870e0a596a6c738406e7aaf8?rik=cz9WnlJztUk0NQ&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; 
+    background-size: cover; 
+}
+
+
+.container{ 
+    width: 50%;
+    height: 450px;
+    margin: 0 auto;
+    background: rgb(221, 156, 156, 178);
+    border-radius: 15px;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+}
+
+input {
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: red;
+    background: red;
+    color: rgb(255, 255, 255);
+}
+
+.header-logo {
+    width: 100%;          
+    max-width: 450px;     
+    height: auto;        
+    margin-bottom: 10px;  
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff3131;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #c4a84d;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    font-size: 30px;
+    padding: 10px;
+    background-color: #ff3131;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+
+
+.quadro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 30px;
+    border-radius: 8px;
+}
+
+
+.texto {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.texto h2 {
+    font-size: 24px;
+    color: #ff3131;
+    margin-bottom: 10px;
+}
+
+.conteudo {
+    font-size: 18px;
+    color: #1a1919;
+    line-height: 1.6;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    min-height: 150px;
+}
+
+
+.imagem {
+    flex-shrink: 0;
+    width: 300px;
+    text-align: center;
+}
+
+.imagem h2 {
+    font-size: 24px;
+    color: #ff3131;
+    margin-bottom: 10px;
+}
+
+.imagem img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+        </style>
+  </body>
+  </html>

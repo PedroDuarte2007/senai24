@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CalcThings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    body{
+        background-image: url(https://th.bing.com/th/id/R.9c8cac08870e0a596a6c738406e7aaf8?rik=cz9WnlJztUk0NQ&pid=ImgRaw&r=0);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+</style>
+<body>
+
+    <button class="open-btn" onclick="openMenu()">Menu</button>
+
+
+    <div id="myMenu" class="menu">
+        <div class="menu-header">
+            <h3>Veja outros Projetos</h3>
+            <span class="close-btn" onclick="closeMenu()">&times;</span>
+        </div>
+        <ul>
+            <li><a href="https://pedroduarte2007.github.io/Banda/index.html">Banda - Dead Soul</a></li>
+            <br>
+            <li><a href="https://pedroduarte2007.github.io/TempCalc/index.html">TempCalc</a></li>
+        </ul>
+    </div>
+
+    <div class="imglogo">
+        <center><img src="./img/logo.png" alt="Logo Kitnet Jaguariúna" class="header-logo"></center>
+    </div>
+
+    <body>
+        <center><div class="content-container">
+            <h1>Formulas</h1>
+            <p>Aqui temos a discografia completa do Dead Soul</p>
+    
+            <div class="song">
+                <h2>Celsius para Kelvin</h2><img src="./img/c=k.png" alt="Capa da música Shattered Horizons">
+                <a href = ./kelvin/kelvin.html><h2>Resolver</h2></a>
+            </div>
+            <br>
+            <div class="song">
+                <h2>Celsius para Fahrenheit</h2>
+                <img src="./img/c=f1.png">
+                <a href = ./fahrenheit/fahrenheit.html><h2>Resolver</h2></a>
+            </div>
+            <br>
+            <div class="song">
+                <h2>Fahrenheit para Kelvin</h2>
+                <img src="./img/f=k.png">
+                <a href = ./ktof/ktof.html><h2>Resolver</h2></a>
+            </div></center>
+            <style>
+                a:link{
+                    text-decoration: none;
+                }
+            </style>
+    
+            </div>
+            <footer>
+                <center><B><p><font color = #ffffff>&copy; 2024 CalcThings - Todos os direitos reservados</font></p></B></center>
+            </footer>
+
+            <script src="server.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+//html
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira de Investimentos</title>
+    <link rel="styleheet" href="style.css">
+
+  </head>
+  <body>
+    
+    <div class="contanier">
+        <input type="text" placeholder="Nome do Investimento" id="nomedoinvestimento">
+        <input type="text" placeholder="Nome da Ação" id="nomedaação">
+        <input type="text" placeholder="Valor da Compra" id="valorCompra">
+        <input type="text" placeholder="Valor de Venda" id="valorVenda">
+        <br />
+          <button onclick="somar()">Processar Valores</button>
+          <p class="result"id="result"></p>
+    </div>
+        <script src="script.js"> </script>
+  </body>
+  </html>
+
+//style
+
+//style
+
+body{
+   background: rgb(255, 255, 255)
+   }
+
+   .container{ 
+     width: 50%;
+     height: 450px;
+     margin: 0 auto;
+     background: rgb(221, 156, 156, 178);
+     border-radius: 15px;
+   }
+
+   input{
+       width:250px;
+       height:50px;
+       border-radius: 15px;
+       border-color: pink;
+
+   }
+
+   button{
+       width: 100px;
+       height: 50px;
+       border-radius: 15px;
+       border-color: red;
+       background: red;
+       color: rgb(255, 255, 255);
+   }
+
+//script
+
+function somar() {
+  var valorVenda = parseFloat(document.getElementById("valorVenda").value);
+  var valorCompra = parseFloat(document.getElementById("valorCompra").value);
+  var result = document.querySelector("#result");
+  var patrimonioacumulado = valorCompra + valorVenda;
+  document.getElementById('result').innerHTML = 'result' + result;
+
+    result.innerHTML = `
+    <p>Valor Venda: R$${valorVenda},00</p>
+    <p>Valor Compra: R$${valorCompra},00</p>
+    <p>Patrimonio Acumulado: R$${patrimonioacumulado},00</p>
+    `;
+}

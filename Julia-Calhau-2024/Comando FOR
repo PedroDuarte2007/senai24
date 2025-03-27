@@ -1,0 +1,10 @@
+#include <iostream>
+
+int main() {
+    int colocado;
+    for (int colocado = 1; colocado <= 10; ++colocado) 
+        
+    printf("%dº Colocado \n", colocado);
+
+    return 0;
+}

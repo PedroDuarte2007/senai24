@@ -1,0 +1,33 @@
+#include <iostream>
+#include <math.h>
+ 
+// define o valor de PI
+#define PI 3.141592653
+ 
+using namespace std;
+ 
+// função principal do programa
+int main(int argc, char *argv[]){
+  // variáveis usadas na resolução do problema
+  double raio, altura, volume, area;
+     
+  // vamos ler o raio e a altura do cilindro
+  cout << "Informe o raio do cilindro: ";
+  cin >> raio;
+  cout << "Informe a altura do cilindro: ";
+  cin >> altura;
+     
+  // vamos calcular o volume do cilindro
+  volume = PI * pow(raio, 2) * altura;
+     
+  // agora vamos calcular a área do cilindro
+  area = 2 * PI * raio * (raio + altura);
+     
+  // e mostramos o resultado
+  cout << "O volume do cilindro é: " << volume << endl;
+  cout << "A área do cilindro é: " << area << endl;
+   
+  cout << "\n" << endl;
+  system("PAUSE"); // pausa o programa
+  return EXIT_SUCCESS;
+}

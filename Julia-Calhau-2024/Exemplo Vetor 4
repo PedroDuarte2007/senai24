@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    const int ARRAY_SIZE = 101;
+    int num[ARRAY_SIZE], cont;
+
+    for(cont=0 ; cont<ARRAY_SIZE ; cont++)
+        num[cont] = 2*cont;
+
+    for(cont=1 ; cont<ARRAY_SIZE ; cont++)
+        cout<<"Dobro de "<<cont<<": "<<num[cont]<<endl;
+
+}

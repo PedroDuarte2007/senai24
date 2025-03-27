@@ -1,0 +1,74 @@
+html
+
+<div class="card-container">
+                <div class="card">
+                  <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1uWaA1.img?w=768&h=432&m=6" alt="Image 1">
+                  <div class="card-content">
+                    <h2 class="card-title">Noticias do Mundo</h2>
+                    <p class="card-description">Homem dado como morto e cremado pela família é encontrado vivo nos EUA</p>
+                    <a href="../noticias/1.html" class="card-button">Veja Mais!</a>
+                  </div>
+                </div>
+
+
+
+
+Style
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+
+  .card-container {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #333;
+  }
+
+  .card-description {
+    font-size: 1em;
+    color: #666;
+    margin: 0 0 20px;
+  }
+
+  .card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .card-button:hover {
+    background-color: #0056b3;
+  }

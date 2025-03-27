@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main (){
+    char nome_mercadoria[252];
+    float valor;
+    
+    
+    printf("Digite o nome da mercadoria: ");
+    scanf("%s", nome_mercadoria);
+    
+    printf("Digite o valor da mercadoria: ");
+    scanf("%f", &valor);
+    
+    printf("O nome da mercadoria é %s", nome_mercadoria);
+    printf(" e o novo valor da mercadoria sera de: %2.f", valor*0.05+valor);
+    return 0;
+    
+}   
